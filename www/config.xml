@@ -74,8 +74,8 @@
       <gap:plugin name="org.apache.cordova.network-information"/>
       <gap:plugin name="org.apache.cordova.splashscreen"/>
       <gap:plugin name="org.apache.cordova.vibration"/> 
-      <!--  <gap:plugin name="com.phonegap.plugins.pushplugin" version="2.5.0" />  -->
-      <gap:plugin name="phonegap-plugin-push" source="npm" version="1.4.5" />
+      <gap:plugin name="com.phonegap.plugins.pushplugin" version="2.5.0" />
+      <!--  <gap:plugin name="phonegap-plugin-push" source="npm" version="1.4.5" />  -->
 
     <access origin="*" />
 
