@@ -8,6 +8,11 @@
         ARUN G
     </author>
     <feature name="http://api.phonegap.com/1.0/device" /> 
+     <feature name="Push">
+      <param name="wp-package" value="Push" />
+      <param name="onload" value="false" />
+    </feature>
+
     <preference name="permissions" value="none" />
     <preference name="phonegap-version" value="3.7.0" />
     <preference name="orientation" value="default" />
@@ -30,10 +35,7 @@
     <!-- iOS: Obey the app's viewport meta tag -->
     <preference name="EnableViewportScale" value="true"/>
     <preference name="WindowsToastCapable" value="true"/> 
-    <feature name="Push">
-      <param name="wp-package" value="Push" />
-      <param name="onload" value="false" />
-    </feature>
+   
     <icon src="icon.png" />
     
     <icon gap:platform="ios" height="57" src="res/icon/ios/icon-57.png" width="57" />
@@ -46,6 +48,13 @@
     <gap:splash gap:platform="ios" height="1136" src="res/screen/ios/screen-iphone-portrait-568h-2x.png" width="640" />
     <gap:splash gap:platform="ios" height="1024" src="res/screen/ios/screen-ipad-portrait.png" width="768" />
     <gap:splash gap:platform="ios" height="768" src="res/screen/ios/screen-ipad-landscape.png" width="1024" />
+
+    <gap:splash gap:platform="android" gap:density="ldpi" src="res/screen/android/200x320.png" />
+    <gap:splash gap:platform="android" gap:density="mdpi" src="res/screen/android/320x480" />
+    <gap:splash gap:platform="android" gap:density="hdpi" src="res/screen/android/480x800.png" />
+    <gap:splash gap:platform="android" gap:density="xhdpi" src="res/screen/android/720x1280.png" />
+    <gap:splash gap:platform="android" gap:density="xxhdpi" src="res/screen/android/960x1600.png" />
+    <gap:splash gap:platform="android" gap:density="xxxhdpi" src="res/screen/android/1280x1920.png" />
   
       <gap:plugin name="org.apache.cordova.battery-status"/>
       <gap:plugin name="org.apache.cordova.camera"/>
@@ -65,7 +74,7 @@
       <gap:plugin name="org.apache.cordova.network-information"/>
       <gap:plugin name="org.apache.cordova.splashscreen"/>
       <gap:plugin name="org.apache.cordova.vibration"/> 
-      <gap:plugin name="com.phonegap.plugins.pushplugin" version="2.5.0" />   
-      
+      <gap:plugin name="com.phonegap.plugins.pushplugin" version="2.5.0" />      
     <access origin="*" />
+    
 </widget>
