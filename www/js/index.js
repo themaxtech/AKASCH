@@ -2065,6 +2065,24 @@ $(document).on('pageshow', '#login', function(){
     var amnews = $.jStorage.get("appid");
     var amnewd = $.jStorage.get("gcmid");
  
+ if (device.platform == 'android' || device.platform == 'Android' ) {
+        if (!amnewd) {
+            location.reload(); 
+        }      
+    } else if(device.platform == "Win32NT"){
+       if (!amnew) {
+        //alert("hi" + valuesss);
+            location.reload(); 
+            //$.mobile.changePage("#login");             
+        } else {
+            $("#vini", $.mobile.activePage).val(amnew);            
+        }             
+    } else {
+        if (!amnews) {
+         
+        }  
+    } 
+    
     
 });
 $(document).on('pageshow', '#homepage', function(){     
