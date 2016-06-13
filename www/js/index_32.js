@@ -1,32 +1,3 @@
-/*
- * Licensed to the Apache Software Foundation (ASF) under one
- * or more contributor license agreements.  See the NOTICE file
- * distributed with this work for additional information
- * regarding copyright ownership.  The ASF licenses this file
- * to you under the Apache License, Version 2.0 (the
- * "License"); you may not use this file except in compliance
- * with the License.  You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing,
- * software distributed under the License is distributed on an
- * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
- * KIND, either express or implied.  See the License for the
- * specific language governing permissions and limitations
- * under the License.
- */
-
-/*
-$.jStorage.set("username", '');
-$.jStorage.set("status", '');
-$.jStorage.set("userpass", '');
-$.jStorage.set("userclass", '');
-$.jStorage.set("usersec", '');
-$.jStorage.set("useroriname", '');
-*/
-
-
 var arung1 = '';
 var arung2 = '';
 var arung3 = '';
@@ -217,12 +188,12 @@ $(document).on('pagecontainershow', function (e, ui) {
                 $.jStorage.set("username", userHandler.username);
 
                 arung7   = $.jStorage.get("appid");
-                //arung111 = $.jStorage.get("gcmid");
+                arung111 = $.jStorage.get("gcmid");
                 arung222 = $.jStorage.get("wpnid");
                 newarun =  encodeURIComponent($.jStorage.get("wpnid"));
                 userHandler.appid = $.jStorage.get("appid"); 
-                //userHandler.gcmid = $.jStorage.get("gcmid"); 
-                //userHandler.wpnid = $.jStorage.get("wpnid"); 
+                userHandler.gcmid = $.jStorage.get("gcmid"); 
+                userHandler.wpnid = $.jStorage.get("wpnid"); 
                 //Send data to server through the Ajax call
                 //action is functionality we want to call and outputJSON is our data
                     //$.ajax({url: 'http://akaraeducation.in/ios/auth.php',
@@ -1022,7 +993,7 @@ $(document).on('pagecontainershow', function (e, ui) {
             if($('#usernamee').val().length > 0 && $('#passworde').val().length > 0){
 
                     $.ajax({url: 'http://akaraeducation.in/ios/buschart.php',
-                    //$.ajax({url: 'http://localhost/akaraeducation.in/ios/buschart.php',
+                    //$.ajax({url: 'http://localhost/mvmcbe.in/ios/buschart.php',
                     data: {action : 'authorization', formData : $('#check-homework').serialize()},
                     type: 'post', 
                     async: 'true', 
@@ -1142,7 +1113,7 @@ $(document).on('pagecontainershow', function (e, ui) {
 
             if($('#usernamef').val().length > 0 && $('#passwordf').val().length > 0){
 
-                    $.ajax({url: 'http://akaraeducation.in/ios/food.php',
+                    $.ajax({url: 'http://mvmcbe.in/ios/food.php',
                     //$.ajax({url: 'food.php',
                     data: {action : 'authorization', formData : $('#check-food').serialize()},
                     type: 'post',                  
@@ -1248,7 +1219,7 @@ $(document).on('pagecontainershow', function (e, ui) {
 
             if($('#usernameo').val().length > 0 && $('#passwordo').val().length > 0){
 
-                    $.ajax({url: 'http://akaraeducation.in/ios/leave.php',
+                    $.ajax({url: 'http://mvmcbe.in/ios/leave.php',
                     //$.ajax({url: 'leave.php',
                     data: {action : 'authorization', formData : $('#check-leavelist').serialize()},
                     type: 'post',                  
@@ -1351,7 +1322,7 @@ $(document).on('pagecontainershow', function (e, ui) {
 
             if($('#usernameh').val().length > 0 && $('#passwordh').val().length > 0){
 
-                    $.ajax({url: 'http://akaraeducation.in/ios/report.php',
+                    $.ajax({url: 'http://mvmcbe.in/ios/report.php',
                     //$.ajax({url: 'report.php',
                     data: {action : 'authorization', formData : $('#check-report').serialize()},
                     type: 'post',                  
@@ -1539,8 +1510,8 @@ $(document).on('pagecontainershow', function (e, ui) {
             if($('#usernameh').val().length > 0 && $('#passwordh').val().length > 0){
 
 
-                    $.ajax({url: 'http://akaraeducation.in/ios/fees.php',
-                    //$.ajax({url: 'http://192.168.0.1/akaraeducation.in/ios/fees.php',
+                    $.ajax({url: 'http://mvmcbe.in/ios/fees.php',
+                    //$.ajax({url: 'http://192.168.0.1/mvmcbe.in/ios/fees.php',
                      
                     data: {action : 'authorization', formData : $('#check-report').serialize()},
                     type: 'post',                  
@@ -1647,7 +1618,7 @@ $(document).on('pagecontainershow', function (e, ui) {
 
             if($('#usernamei').val().length > 0 && $('#passwordi').val().length > 0){
 
-                    $.ajax({url: 'http://akaraeducation.in/ios/exam.php',
+                    $.ajax({url: 'http://mvmcbe.in/ios/exam.php',
                     //$.ajax({url: 'exam.php',
                     data: {action : 'authorization', formData : $('#check-exam').serialize()},
                     type: 'post',                  
@@ -1776,7 +1747,7 @@ $(document).on('pagecontainershow', function (e, ui) {
 
             if($('#usernamej').val().length > 0 && $('#passwordj').val().length > 0){
 
-                    $.ajax({url: 'http://akaraeducation.in/ios/time.php',
+                    $.ajax({url: 'http://mvmcbe.in/ios/time.php',
                     //$.ajax({url: 'time.php',
                     data: {action : 'authorization', formData : $('#check-time').serialize()},
                     type: 'post',                  
@@ -1888,7 +1859,7 @@ $(document).on('pagecontainershow', function (e, ui) {
 
             if($('#usernamek').val().length > 0 && $('#passwordk').val().length > 0){
 
-                    $.ajax({url: 'http://akaraeducation.in/ios/gallery.php',
+                    $.ajax({url: 'http://mvmcbe.in/ios/gallery.php',
                     //$.ajax({url: 'gallery.php',
                     data: {action : 'authorization', formData : $('#check-image').serialize()},
                     type: 'post',                  
@@ -2009,7 +1980,7 @@ $(document).on('pagecontainershow', function (e, ui) {
         $(document).on('click', '#leavesubmit', function() { // catch the form's submit event
             if($('#regnot').val().length > 0 && $('#usernamet').val().length > 0 && $('#clat').val().length > 0 && $('#sect').val().length > 0 && $('#datt').val().length > 0 && $('#messt').val().length > 0){
                    
-                    $.ajax({url: 'http://akaraeducation.in/ios/leaveform.php',
+                    $.ajax({url: 'http://mvmcbe.in/ios/leaveform.php',
                     //$.ajax({url: 'leaveform.php',
                     data: {action : 'authorization', formData : $('#check-leave').serialize()},
                     type: 'post',                  
@@ -2093,15 +2064,15 @@ $(document).on('pageshow', '#login', function(){
     var amnew = $.jStorage.get("wpnid");
     var amnews = $.jStorage.get("appid");
     var amnewd = $.jStorage.get("gcmid");
-  
-  if (device.platform == 'android' || device.platform == 'Android' ) {
+ 
+ if (device.platform == 'android' || device.platform == 'Android' ) {
         if (!amnewd) {
-            //location.reload(); 
+            location.reload(); 
         }      
     } else if(device.platform == "Win32NT"){
        if (!amnew) {
         //alert("hi" + valuesss);
-            //location.reload(); 
+            location.reload(); 
             //$.mobile.changePage("#login");             
         } else {
             $("#vini", $.mobile.activePage).val(amnew);            
@@ -2111,7 +2082,6 @@ $(document).on('pageshow', '#login', function(){
          
         }  
     } 
-    
     
     
 });
@@ -2131,8 +2101,7 @@ $(document).on('pageshow', '#homepage', function(){
         arung6 = $.jStorage.get("useroriname"); 
         arung7 = $.jStorage.get("appid");  
         arung111 = $.jStorage.get("gcmid");
-        arung222 = $.jStorage.get("wpnid");  
-        
+        arung222 = $.jStorage.get("wpnid");   
 
         userHandler.username    = arung1;
         userHandler.userpass    = arung3;
@@ -2391,5 +2360,3 @@ $(document).off('click', '#leavelistsubmit').on('click', '#leavelistsubmit',func
     
 
 });
- 
- 
